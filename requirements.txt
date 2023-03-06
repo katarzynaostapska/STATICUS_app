@@ -8,6 +8,7 @@ dash-html-components==2.0.0
 dash-table==5.0.0
 Flask==2.2.3
 fonttools==4.38.0
+gunicorn==20.1.0
 hamopy==0.4.0
 importlib-metadata==6.0.0
 importlib-resources==5.12.0
