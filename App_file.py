@@ -3,6 +3,7 @@ import dash_bootstrap_components as dbc
 import numpy as np
 import pandas as pd
 import time as t
+import pathlib
 import matplotlib.pylab as plt
 from hamopy import ham_library as ham
 from hamopy.classes import Mesh, Boundary, Time, Material
@@ -15,6 +16,12 @@ from standard import wood_fibre, steel, wood, spruce, glass, argon
 from standard import zinc, mw_sh, mw_soft, aluminium, glue, polyiso_ins
 import plotly.express as px
 import plotly.graph_objects as go
+#
+#
+# get relative data folder
+#
+PATH = pathlib.Path(__file__).parent
+DATA_PATH = PATH.joinpath("../assets").resolve()
 #
 #
 # section definition
@@ -203,6 +210,7 @@ def update_title(user_input1, user_input2, user_input3, button):
             file_name = file_name+'OSLOMET.txt'
         else:
             file_name = file_name+user_input3+'.txt'
+        file_name = DATA_PATH.joinpath(file_name)
         print('file_name', file_name)
         results = HAM_SOLVER(section_input, 'assets\climate_TRD_OSLOMET.txt')
         result = results[0]
