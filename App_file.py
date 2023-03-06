@@ -120,6 +120,7 @@ def WET_PERIODS(result, RH_crit, section):
 #
 # build components
 app = Dash(__name__, external_stylesheets=[dbc.themes.SOLAR])
+server = app.server
 title = dcc.Markdown(children='Mould predictive tool for STATICUS facade: demo')
 ####
 choice_1 = dcc.Markdown(children='Choose section:')
