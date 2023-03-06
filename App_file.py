@@ -194,11 +194,11 @@ def update_title(user_input1, user_input2, user_input3, button):
         else:
             section_input = section_A2
         if user_input2 == 'Oslo':
-            file_name = 'assets\climate_OSLO_'
+            file_name = 'assets//climate_OSLO_'
         elif user_input2 == 'Trondheim':
-            file_name = 'assets\climate_TRD_'
+            file_name = 'assets//climate_TRD_'
         elif user_input2 == 'Trømso':
-            file_name = 'assets\climate_TROMSO_'
+            file_name = 'assets//climate_TROMSO_'
         if user_input3 == 'Reference year':
             file_name = file_name+'OSLOMET.txt'
         else:
