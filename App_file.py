@@ -212,7 +212,7 @@ def update_title(user_input1, user_input2, user_input3, button):
             file_name = file_name+user_input3+'.txt'
         file_name = DATA_PATH.joinpath(file_name)
         print('file_name', file_name)
-        results = HAM_SOLVER(section_input, 'assets\climate_TRD_OSLOMET.txt')
+        results = HAM_SOLVER(section_input, filename)
         result = results[0]
         total_time = results[1]
         fig_r = go.Figure()
