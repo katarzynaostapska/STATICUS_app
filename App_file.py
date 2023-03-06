@@ -21,7 +21,7 @@ import plotly.graph_objects as go
 # get relative data folder
 #
 PATH = pathlib.Path(__file__).parent
-DATA_PATH = PATH.joinpath("../assets").resolve()
+DATA_PATH = PATH.joinpath("../src/assets").resolve()
 #
 #
 # section definition
