@@ -11,8 +11,8 @@ from hamopy.postpro import evolution
 
 # Choice of materials and geometry
 from hamopy.materials.hamstad import BM3
-from hamopy.materials.standard import wood_fibre, steel, wood, spruce, glass, argon
-from hamopy.materials.standard import zinc, mw_sh, mw_soft, aluminium, glue, polyiso_ins
+from standard import wood_fibre, steel, wood, spruce, glass, argon
+from standard import zinc, mw_sh, mw_soft, aluminium, glue, polyiso_ins
 import plotly.express as px
 import plotly.graph_objects as go
 #
