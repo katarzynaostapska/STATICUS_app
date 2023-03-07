@@ -62,8 +62,8 @@ def HAM_SOLVER(section, climate_file):
                               "time"      : "Time [s]",
                               "T"         : 'Temp [C]',
                               "HR"        : 'RH [%]',
-                              "h_t"       : 'h_t', # 5 W/(m2.K) surface transfer coefficient
-                              "h_m"       : 'h_m', # s/m  7.7 x 10e-9 x (3.06 x u_10 - 5.44) / wood: (9.4×10−10 to 5.7×10−9 s/m)
+                              "h_t"       : 'h_t_w', # 5 W/(m2.K) surface transfer coefficient
+                              "h_m"       : 'h_m_w', # s/m  7.7 x 10e-9 x (3.06 x u_10 - 5.44) / wood: (9.4×10−10 to 5.7×10−9 s/m)
                               "P_air"     : 0.0,#"DeltaP" # air pressure (Pa), impacting eventual air transfer in the wall. 0,
                               "g_l"       : 0.0,#'WDR [kg/m2.s]',#[kg/(m2.s)] liquid water income caused by rain
                                 })
