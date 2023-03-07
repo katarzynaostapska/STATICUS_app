@@ -43,7 +43,7 @@ def HAM_SOLVER(section, climate_file):
     file1 = open(climate_file, "r+")
     for line in file1.readlines():
         total_time = (line.split(',')[0][0:-2])
-    total_time = int(total_time)/365*3
+    total_time = int(total_time)/365*7
     #
     start_t = t.time()
     #
