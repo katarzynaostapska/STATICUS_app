@@ -42,8 +42,8 @@ section_A2 = [[aluminium, polyiso_ins, aluminium, spruce, glue, spruce, glue, sp
 def HAM_SOLVER(section, climate_file):
     file1 = open(climate_file, "r+")
     for line in file1.readlines():
-        total_time = (line.split(',')[0][0:-2])
-    total_time = int(total_time)/365*14
+        total_time = (line.split(',')[0][0:len(line)])
+    total_time = int(float(total_time))/365*7
     #
     start_t = t.time()
     #
